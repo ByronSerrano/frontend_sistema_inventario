@@ -1,0 +1,26 @@
+/* ProviderList.css */
+.provider-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+.provider-card {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    max-width: 300px;
+    text-align: center;
+    color:black
+}
+  
+.provider-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+  
+.provider-card p {
+    margin: 5px 0;
+}

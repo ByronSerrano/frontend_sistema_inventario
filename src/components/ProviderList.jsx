@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { allProviders } from '../utils/data';
+import '../styles/ProviderList.css';
 
 const ProviderList = () => {
   const [providers, setProviders] = useState([]);
@@ -21,15 +22,15 @@ const ProviderList = () => {
   return (
     <div>
       <h2>Lista de Proveedores</h2>
-      <ul>
+      <div className='provider-list'>
         {allProviders.map((provider) => (
-          <li key={provider[0]}>
+          <div key={provider[0]} className='provider-card '>
             <h3>{provider[1]}</h3>
             <p>Contacto: {provider[2]}</p>
             <p>Teléfono: {provider[3]}</p>
-          </li>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };

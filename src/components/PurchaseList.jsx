@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { allPurchases } from '../utils/data';
+import '../styles/PurchaseList.css';
 
 const PurchaseList = () => {
   const [purchases, setPurchases] = useState([]);
@@ -23,16 +24,16 @@ const PurchaseList = () => {
   return (
     <div>
       <h2>Lista de Compras</h2>
-      <ul>
+      <div className='purchase-list'>
         {Object.entries(allPurchases).map(([key, value]) => (
-          <li key={key}>
+          <div key={key} className='purchase-card'>
             <h3>{key}</h3>
             {value.map((item, index) => (
               <p key={index}>{item.join(', ')}</p>
             ))}
-          </li>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };

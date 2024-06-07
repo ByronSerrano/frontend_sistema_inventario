@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { allProducts } from '../utils/data';
+import '../styles/ProductList.css';
 
 const ProductList = () => {
   const [products, setProducts] = useState([]);
@@ -24,16 +25,16 @@ const ProductList = () => {
   return (
     <div>
       <h2>Lista de Productos</h2>
-      <ul>
+      <div className="product-list">
         {allProducts.map((product) => (
-          <li key={product[0]}>
+          <div key={product[0]} className="product-card">
             <h3>{product[1]}</h3>
             <p>{product[2]}</p>
             <p>Precio: {product[3]}</p>
             <p>Stock: {product[4]}</p>
-          </li>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };
