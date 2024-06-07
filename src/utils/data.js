@@ -59,12 +59,29 @@ export const allProviders = [
 ]
 
 export const allPurchases = {
-    'Compra 1': [
-      ['Producto 1', 'Proveedor 1', '10', '100'],
-      ['Producto 2', 'Proveedor 2', '20', '200'],
+    "compras": [
+        [
+            3,
+            "Producto de ejemplo",
+            "Byron",
+            "Fri, 07 Jun 2024 00:00:00 GMT",
+            5
+        ]
     ],
-    'Compra 2': [
-      ['Producto 3', 'Proveedor 3', '30', '300'],
-      ['Producto 4', 'Proveedor 4', '40', '400'],
+    "productos": [
+        [
+            1,
+            "Producto de ejemplo"
+        ]
     ],
-  };
+    "usuarios": [
+        [
+            1,
+            "Julio Vinces"
+        ],
+        [
+            2,
+            "Byron"
+        ]
+    ]
+};
