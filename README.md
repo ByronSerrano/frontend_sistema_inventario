@@ -28,7 +28,9 @@ La cual es el FrontEnd de la siguiente aplicación:
 ## Levantar el proyecto
 1. Sigue los pasos de Instalación del Proyecto BackEnd
 
-2. Dentro de los archivos de la carpeta de components:
+2. Levanta el proyecto de Backend.
+ 
+3. Dentro de los archivos de la carpeta de components:
 
 ![image](https://github.com/ByronSerrano/frontend_sistema_inventario/assets/115562510/cd8933d9-6f05-4d19-820d-73f2ba9d1e20)
 
