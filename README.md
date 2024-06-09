@@ -1,8 +1,9 @@
 # Aplicación de Gestión de Inventario
 
 Está aplicación de gestión de inventario desarrollada usando React + Vite.
+
 La cual es el FrontEnd de la siguiente aplicación:
-- [BackEnd]([https://github.com/vitejs/vite-plugin-react-swc](https://github.com/Julius266/BCalidad)) 
+- [BackEnd](https://github.com/Julius266/BCalidad) 
 
 
 ## Requisitos
