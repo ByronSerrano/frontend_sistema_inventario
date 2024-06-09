@@ -1,8 +1,40 @@
-# React + Vite
+# Aplicación de Gestión de Inventario
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Está aplicación de gestión de inventario desarrollada usando React + Vite.
+La cual es el FrontEnd de la siguiente aplicación:
+- [BackEnd]([https://github.com/vitejs/vite-plugin-react-swc](https://github.com/Julius266/BCalidad)) 
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Requisitos
+- NodeJS 
+- npm (instalado con NodeJS por defecto)
+- [Proyecto BackEnd](https://github.com/Julius266/BCalidad)
+
+## Instalación
+1. Clona el repositorio en tu máquina:
+
+   ```bash
+   git clone https://github.com/ByronSerrano/frontend_sistema_inventario.git
+   ```
+
+4. Dentro del proyecto, instala las dependencias:
+
+   ```bash
+   npm install
+   ```
+
+
+## Levantar el proyecto
+1. Sigue los pasos de Instalación del Proyecto BackEnd
+
+2. Dentro de los archivos de la carpeta de components:
+![image](https://github.com/ByronSerrano/frontend_sistema_inventario/assets/115562510/cd8933d9-6f05-4d19-820d-73f2ba9d1e20)
+
+Modifica los 
+
+
+algo. Ejecutar el siguiente comando para levantar el proyecto:
+
+   ```bash
+   npm run dev
+   ```
