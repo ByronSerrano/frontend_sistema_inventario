@@ -1,6 +1,7 @@
 /* ProviderList.css */
 .provider-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
   

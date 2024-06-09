@@ -1,0 +1,28 @@
+/* AggProduct.css */
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+.form input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 70%;
+    margin-left: 20px;
+}
+
+.form button:hover {
+    background-color: #0056b3;
+}
+ 
