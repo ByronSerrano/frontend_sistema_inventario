@@ -30,7 +30,7 @@ La cual es el FrontEnd de la siguiente aplicación:
 
 2. Levanta el proyecto de Backend.
  
-3. (Opcional) En caso de que tenga levantado el BackEnd de forma remota, puede ir a la carpeta de Services, y dentro del Archivo Services.js puede encontrar la conexión a la API:
+3. (Opcional) En caso de que tenga levantado el BackEnd de forma remota, puede ir a la carpeta de Services, y dentro del Archivo Services.js puede encontrar la conexión a la API, en donde la puede cambiar para poner la URL de conexión a la API:
 
 ![imagen](https://github.com/ByronSerrano/frontend_sistema_inventario/assets/115562510/a334006f-27c9-43e5-991e-322b5584fbd3)
 
