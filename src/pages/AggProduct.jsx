@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
-import '../styles/AggProduct.css';
+import '../styles/pageStyles/AggProduct.css';
+import InputForm from '../components/form/InputForm.jsx';
+import { addProduct } from '../services/services';
+import ButtonForm from '../components/form/ButtonForm.jsx';
 
 const AddProductForm = () => {
   const [product, setProduct] = useState({
@@ -10,40 +13,31 @@ const AddProductForm = () => {
   });
 
   const handleChange = (e) => {
+    let value = e.target.name === 'precio' || e.target.name === 'stock' ? parseInt(e.target.value) : e.target.value;
     setProduct({
       ...product,
-      [e.target.name]: e.target.value
+      [e.target.name]: value
     });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here you can call the function to add the product
-    console.log(product);
+    addProduct(product);
   };
 
   return (
-    <div className="container">
-      <form className="form" onSubmit={handleSubmit}>
-        <label>
-          Nombre del Producto:
-          <input type="text" name="nombre" value={product.nombre} onChange={handleChange} required />
-        </label>
-        <label>
-          Descripción:
-          <input name="descripcion" value={product.descripcion} onChange={handleChange} required />
-        </label>
-        <label>
-          Precio:
-          <input type="number" step="0.01" name="precio" value={product.precio} onChange={handleChange} required />
-        </label>
-        <label>
-          Stock:
-          <input type="number" name="stock" value={product.stock} onChange={handleChange} required />
-        </label>
-        <button type="submit">Agregar producto</button>
-      </form>
-    </div>
+    <>
+      <h2 className="title">Agregar Producto</h2>
+      <div className="container">
+        <form className="form" onSubmit={handleSubmit}>
+          <InputForm label="Nombre:" type="text" name="nombre" responseValue={product.nombre} handleChange={handleChange} />
+          <InputForm label="Descripción:" type="text" name="descripcion" responseValue={product.descripcion} handleChange={handleChange} />
+          <InputForm label="Precio:" type="number" name="precio" responseValue={product.precio} handleChange={handleChange} />
+          <InputForm label="Stock:" type="number" name="stock" responseValue={product.stock} handleChange={handleChange} />
+          <ButtonForm />
+        </form>
+      </div>
+    </>
   );
 };
 

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { fetchPurchases } from '../services/services';
-import '../styles/PurchaseList.css';
+import '../styles/pageStyles/PurchaseList.css';
+import DivisorLine from '../components/DivisorLine';
 
 const PurchaseList = () => {
   const [purchases, setPurchases] = useState([]);
@@ -21,6 +22,7 @@ const PurchaseList = () => {
         {purchases.map((purchase, index) => (
           <div key={index} className='purchase-card'>
             <h3>Compra {index + 1}</h3>
+            <DivisorLine />
             {purchase.slice(1).map((item, index) => ( // Exclude the first element (ID)
             <p key={index}>{item}</p>
             ))}

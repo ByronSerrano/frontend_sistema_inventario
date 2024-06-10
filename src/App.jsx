@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
-import ProductList from './components/ProductList';
-import ProviderList from './components/ProviderList';
-import PurchaseList from './components/PurchaseList';
+import ProductList from './pages/ProductList';
+import ProviderList from './pages/ProviderList';
+import PurchaseList from './pages/PurchaseList';
 import AggProduct from './pages/AggProduct';
 import Navbar from './components/Navbar';
 

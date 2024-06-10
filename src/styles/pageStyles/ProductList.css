@@ -1,0 +1,13 @@
+/* ProductList.css */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+    
+.product-name {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+  
