@@ -30,12 +30,12 @@ La cual es el FrontEnd de la siguiente aplicación:
 
 2. Levanta el proyecto de Backend.
  
-3. Dentro de los archivos de la carpeta de components:
+3. (Opcional) En caso de que tenga levantado el BackEnd de forma remota, puede ir a la carpeta de Services, y dentro del Archivo Services.js puede encontrar la conexión a la API:
 
-![image](https://github.com/ByronSerrano/frontend_sistema_inventario/assets/115562510/cd8933d9-6f05-4d19-820d-73f2ba9d1e20)
+![imagen](https://github.com/ByronSerrano/frontend_sistema_inventario/assets/115562510/a334006f-27c9-43e5-991e-322b5584fbd3)
 
  
-algo. Ejecutar el siguiente comando para levantar el proyecto:
+4. Ejecutar el siguiente comando para levantar el proyecto:
 
    ```bash
    npm run dev
