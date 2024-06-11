@@ -5,22 +5,20 @@
     justify-content: center;
 }
   
-.purchase-card {
-    background-color: #f5f5f5;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 10px;
-    max-width: 300px;
-    text-align: center;
-    color:black
+.title {
+    margin-left: 2%;
+    padding-bottom: 2%;
 }
-  
-.purchase-card h3 {
+
+.purchase-name {
     font-size: 1.2rem;
     margin-bottom: 10px;
+    text-align: center;
 }
-  
-.purchase-card p {
-    margin: 5px 0;
+
+.element-purchase {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
 }

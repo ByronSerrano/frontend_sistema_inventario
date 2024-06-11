@@ -23,6 +23,7 @@ const AddProductForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     addProduct(product);
+    alert('Producto agregado!');
   };
 
   return (
@@ -34,7 +35,7 @@ const AddProductForm = () => {
           <InputForm label="Descripción:" type="text" name="descripcion" responseValue={product.descripcion} handleChange={handleChange} />
           <InputForm label="Precio:" type="number" name="precio" responseValue={product.precio} handleChange={handleChange} />
           <InputForm label="Stock:" type="number" name="stock" responseValue={product.stock} handleChange={handleChange} />
-          <ButtonForm />
+          <ButtonForm route="productos"/>
         </form>
       </div>
     </>

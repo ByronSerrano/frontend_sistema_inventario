@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import '../styles/pageStyles/ProductList.css';
 import { fetchProducts } from '../services/services';
 import DivisorLine from '../components/DivisorLine';
 import Card from '../components/Card';
+import ButtonRoute from '../components/ButtonRoute';
 
 
 const ProductList = () => {
@@ -21,7 +21,7 @@ const ProductList = () => {
  
   return (
     <div>
-      <h2>Lista de Productos</h2>
+      <h2 className="title">Lista de Productos</h2>
       <div className="product-list">
         {products.map((product) => (
           <Card key={product[0]}>
@@ -33,9 +33,7 @@ const ProductList = () => {
           </Card>
         ))}
       </div>
-      <Link to="/agregar_producto">
-        <button>Agregar</button>
-      </Link>
+      <ButtonRoute route="agregar_producto" text="Agregar"/>
     </div>
   );
 };

@@ -4,6 +4,7 @@ import ProductList from './pages/ProductList';
 import ProviderList from './pages/ProviderList';
 import PurchaseList from './pages/PurchaseList';
 import AggProduct from './pages/AggProduct';
+import AggProvider from './pages/AggProvider';
 import Navbar from './components/Navbar';
 
 
@@ -18,6 +19,7 @@ function App() {
           <Route path="/proveedores" element={<ProviderList />} />
           <Route path="/compras" element={<PurchaseList />} />
           <Route path="/agregar_producto" element={<AggProduct />} />
+          <Route path="/agregar_proveedor" element={<AggProvider />} />
         </Routes>
       </div>
     </Router>

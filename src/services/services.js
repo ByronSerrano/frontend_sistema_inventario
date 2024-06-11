@@ -44,6 +44,14 @@ export const fetchProviders = async () => {
     }
 }; 
 
+export const addProvider = async (provider) => {
+    try {
+        await axios.post(`${urlApi}/add_supplier`, provider);
+    } catch (error) {
+        console.error('Error al agregar el proovedor:', error);
+    }
+}
+
 
 // Purchase
 export const fetchPurchases = async () => {
