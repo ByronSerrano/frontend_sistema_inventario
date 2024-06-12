@@ -3,9 +3,10 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-d
 import ProductList from './pages/ProductList';
 import ProviderList from './pages/ProviderList';
 import PurchaseList from './pages/PurchaseList';
+import Navbar from './components/Navbar';
 import AggProduct from './pages/AggProduct';
 import AggProvider from './pages/AggProvider';
-import Navbar from './components/Navbar';
+import AggPurchase from './pages/AggPurchase';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/compras" element={<PurchaseList />} />
           <Route path="/agregar_producto" element={<AggProduct />} />
           <Route path="/agregar_proveedor" element={<AggProvider />} />
+          <Route path="/agregar_compra" element={<AggPurchase />} />
         </Routes>
       </div>
     </Router>

@@ -25,6 +25,7 @@ const ProviderList = () => {
           <Card key={provider[0]}>
             <h3 className="provider-name">{provider[1]}</h3>
             <DivisorLine />
+            <p><b>ID:</b> {provider[0]}</p>
             <p><b>Contacto:</b> {provider[2]}</p>
             <p><b>Teléfono:</b> {provider[3]}</p>
           </Card>

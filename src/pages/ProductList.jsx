@@ -27,6 +27,7 @@ const ProductList = () => {
           <Card key={product[0]}>
             <h3 className="product-name">{product[1]}</h3>
             <DivisorLine />
+            <p><b>ID:</b> {product[0]}</p>
             <p><b>Descripción:</b> {product[2]}</p>
             <p><b>Precio:</b> {product[3]}</p>
             <p><b>Stock:</b> {product[4]}</p>

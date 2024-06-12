@@ -3,6 +3,7 @@ import { fetchPurchases } from '../services/services';
 import '../styles/pageStyles/PurchaseList.css';
 import DivisorLine from '../components/DivisorLine';
 import Card from '../components/Card';
+import ButtonRoute from '../components/ButtonRoute';
 
 const PurchaseList = () => {
   const [purchases, setPurchases] = useState([]);
@@ -27,7 +28,7 @@ const PurchaseList = () => {
   return (
     <div>
       <h2 className="title">Lista de Compras</h2>
-      <div className='purchase-list'>
+      <section className='purchase-list'>
         {purchases.map((purchase, index) => (
           <Card key={index}>
             <h3 className="purchase-name">Compra #{index + 1}</h3>
@@ -37,7 +38,8 @@ const PurchaseList = () => {
             ))}
           </Card>
         ))}
-      </div>
+      </section>
+      <ButtonRoute route="agregar_compra" text="Agregar" />
     </div>
   );
 };

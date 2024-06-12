@@ -62,3 +62,11 @@ export const fetchPurchases = async () => {
         console.error('Error al obtener las compras:', error);
     }
 };
+
+export const addPurchase = async (purchase) => {
+    try {
+        await axios.post(`${urlApi}/compras_agregar`, purchase);
+    } catch (error) {
+        console.error('Error al agregar la compra:', error);
+    }
+}

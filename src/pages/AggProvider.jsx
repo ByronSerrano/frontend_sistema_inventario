@@ -4,7 +4,7 @@ import InputForm from '../components/form/InputForm.jsx';
 import { addProvider } from '../services/services';
 import ButtonForm from '../components/form/ButtonForm.jsx';
 
-const AddProductForm = () => {
+const AddProviderForm = () => {
   const [provider, setProvider] = useState({
     nombre: '',
     contacto: '',
@@ -41,4 +41,4 @@ const AddProductForm = () => {
   );
 };
 
-export default AddProductForm;
+export default AddProviderForm;
